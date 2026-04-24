@@ -1,6 +1,6 @@
 # Supply Chain Operations Analysis
 
-## Overview
+## Project Overview
 
 This project analyzes supply chain operations data to identify inefficiencies in **delivery performance, supplier reliability, transportation strategy, and inventory management**.
 
