@@ -1,61 +1,72 @@
-# Supply Chain Operations Analysis
+# Supply Chain Operations Analysis & Dashboard
 
 ## Project Overview
 
-This project analyzes supply chain operations data to identify inefficiencies in **delivery performance, supplier reliability, transportation strategy, and inventory management**.
+This project analyzes a simulated supply chain dataset to identify inefficiencies across **supplier performance, logistics strategy, and inventory management**.
 
-The analysis focuses on uncovering key operational bottlenecks and providing **data-driven recommendations** to improve overall efficiency and reduce risk.
+The project combines **exploratory data analysis (EDA)** and an **interactive Streamlit dashboard** to translate raw operational data into actionable business insights.
+
+## Business Context
+
+In supply chain operations, inefficiencies in delivery, supplier reliability, and inventory planning can lead to:
+
+- High late delivery rates
+- Stockouts and lost sales
+- Inefficient logistics costs
+
+This project aims to diagnose these issues and provide **data-driven optimization strategies**.
 
 ## Objectives
 
-* Evaluate supplier performance and delivery reliability
-* Analyze the impact of transportation modes on shipping time
-* Identify inventory risks (stockout & overstock)
-* Assess cost efficiency in relation to operational performance
+- Evaluate supplier reliability and late delivery patterns
+- Analyze transportation performance vs cost
+- Identify high-risk inventory (stockout & overstock)
+- Measure operational efficiency using unit economics
 
 ## Tools & Technologies
 
-* Python (Pandas, NumPy)
-* Data Visualization (Matplotlib)
-* Jupyter Notebook / Google Colab
+- Python (Pandas, NumPy)
+- Data Visualization (Matplotlib, Plotly)
+- Streamlit (Interactive Dashboard)
+- Jupyter Notebook (EDA)
 
 ## Key Metrics
 
-* **Late Delivery Rate (~50%)**
-* **Average Shipping Time (1–10 days range)**
-* **Total Lead Time (end-to-end process)**
-* **Stock Gap (inventory vs demand)**
-* **Cost per Unit & Revenue per Unit**
+- Late Delivery Rate (~47%)
+- Average Shipping Time (~5.7 days)
+- Total Lead Time (~36 days)
+- Stock Gap (inventory vs demand imbalance)
+- Revenue per Unit & Cost per Unit
 
 ## Key Insights
 
-* **No significant correlation between cost and delivery speed**, indicating inefficient logistics spending
-* **Severe stockout risk (~1000 unit shortages)** across top SKUs, highlighting poor inventory planning
-* **Transport mode significantly impacts delivery time**, with sea being ~50% slower than road
-* **Supplier performance varies (40%–52% late rate)**, indicating inconsistency in reliability
-* **High variability in lead time**, suggesting unstable supply chain performance
+- **High Late Delivery Rate (~47%)**
+  → Indicates systemic inefficiency in supplier and logistics performance
 
-## Recommendations
+- **No strong correlation between cost and shipping time**
+  → Higher cost does not guarantee faster delivery → potential cost inefficiency
 
-### 1. Optimize Supplier Strategy
+- **Severe Stockout Risk (~900–1000 units)**
+  → Inventory planning is misaligned with demand
 
-Rebalance supplier allocation by reducing reliance on high-delay vendors (>50% late rate) and shifting volume to more reliable suppliers
+- **Transport Mode Trade-off**
+  → Sea is cheapest but slowest  
+  → Road is the fastest and most balanced option
 
-### 2. Strengthen Inventory Planning (High Priority)
+- **Supplier Performance Variability (40%–52% late rate)**
+  → Significant inconsistency → opportunity for supplier optimization
 
-Implement safety stock for high-demand SKUs and address critical stockout risks (up to ~1000 unit shortages)
+## Dashboard (Streamlit)
 
-### 3. Enhance Transport Strategy
+This project includes an interactive dashboard to explore:
 
-Adopt a priority-based model: Road as default, Air for urgent deliveries, and Sea for low-priority shipments
+- Supplier performance comparison
+- Transport mode efficiency
+- Inventory risk analysis
+- Cost vs performance relationship
+- Demand segmentation
 
-### 4. Improve Cost Efficiency
+### Run Locally
 
-Eliminate high-cost, low-performance shipments and optimize decisions based on cost-to-performance effectiveness
-
-## Expected Impact
-
-* Reduce late delivery rate to **<45%**
-* Decrease stockout risk by **>70%**
-* Improve delivery time by **1–2 days**
-* Increase overall cost efficiency
+```bash
+streamlit run analysis_02.py
