@@ -4,7 +4,7 @@
 
 This project analyzes a simulated supply chain dataset to identify inefficiencies across **supplier performance, logistics strategy, and inventory management**.
 
-The project combines **exploratory data analysis (EDA)** and an **interactive Streamlit dashboard** to translate raw operational data into actionable business insights.
+The project combines **Exploratory Data Analysis (EDA)** and an **Interactive Streamlit Dashboard** to translate raw operational data into actionable business insights.
 
 ## Business Context
 
@@ -56,7 +56,7 @@ This project aims to diagnose these issues and provide **data-driven optimizatio
 - **Supplier Performance Variability (40%–52% late rate)**
   → Significant inconsistency → opportunity for supplier optimization
 
-## Dashboard (Streamlit)
+## Dashboard(https://supply-chain-analysis-drvawxydyr5mmjsywgevak.streamlit.app/)
 
 This project includes an interactive dashboard to explore:
 
