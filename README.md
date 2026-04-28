@@ -65,8 +65,3 @@ This project includes an interactive dashboard to explore:
 - Inventory risk analysis
 - Cost vs performance relationship
 - Demand segmentation
-
-### Run Locally
-
-```bash
-streamlit run analysis_02.py
